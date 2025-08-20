@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Clicker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div id="btn-div">
+                <button onclick="test()">nappi</button>
+            </div>
+            <h1 id="header"></h1>
+        </main>
+    </body>
+    <script>
+        var laskuri = 0;
+        function test() {
+            laskuri ++;
+            document.getElementById("header").innerHTML = laskuri;
+        }
+    </script>
+</html>
