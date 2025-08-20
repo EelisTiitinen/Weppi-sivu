@@ -1,21 +1,27 @@
 <html>
     <head>
         <title>Clicker</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="clicker_style.css">
     </head>
     <body>
         <main>
-            <div id="btn-div">
-                <button onclick="test()">nappi</button>
+            <div id="luku-div">
+                <h1 id="luku">0</h1>
             </div>
-            <h1 id="header"></h1>
+            <div id="btn-div">
+                <button id="nappi" onclick="laske()">PAINA</button>
+            </div>
+            <div id="upgrade-div">
+                <div id="upgrade1">
+                    <button id="upgrade-btn1" onclick="upgrade1()">+1 klikkaus</button>
+                    <h2 id="hinta1">Hinta: 20</h2>
+                </div>
+                <div id="upgrade2">
+                    <button id="upgrade-btn2" onclick="upgrade2()">+1 sekunnissa</button>
+                    <h2 id="hinta2">Hinta: 200</h2>
+                </div>
+            </div>
         </main>
     </body>
-    <script>
-        var laskuri = 0;
-        function test() {
-            laskuri ++;
-            document.getElementById("header").innerHTML = laskuri;
-        }
-    </script>
+    <script src="clicker_js.js"></script>
 </html>
