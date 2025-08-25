@@ -4,24 +4,22 @@
         <link rel="stylesheet" href="clicker_style.css">
     </head>
     <body>
-        <main>
-            <div id="luku-div">
-                <h1 id="luku">0</h1>
+        <div id="luku-div">
+            <h1 id="luku">0</h1>
+        </div>
+        <div id="btn-div">
+            <button id="nappi" onclick="laske_klikkaus()">KLIKKAA</button>
+        </div>
+        <div id="upgrade-div">
+            <div id="upgrade1">
+                <button id="upgrade-btn1" onclick="upgrade1()">+1 klikkaus</button>
+                <h2 id="hinta1">Hinta: 20</h2>
             </div>
-            <div id="btn-div">
-                <button id="nappi" onclick="laske()">PAINA</button>
+            <div id="upgrade2">
+                <button id="upgrade-btn2" onclick="upgrade2()">+1 sekunnissa</button>
+                <h2 id="hinta2">Hinta: 200</h2>
             </div>
-            <div id="upgrade-div">
-                <div id="upgrade1">
-                    <button id="upgrade-btn1" onclick="upgrade1()">+1 klikkaus</button>
-                    <h2 id="hinta1">Hinta: 20</h2>
-                </div>
-                <div id="upgrade2">
-                    <button id="upgrade-btn2" onclick="upgrade2()">+1 sekunnissa</button>
-                    <h2 id="hinta2">Hinta: 200</h2>
-                </div>
-            </div>
-        </main>
+        </div>
     </body>
     <script src="clicker_js.js"></script>
 </html>

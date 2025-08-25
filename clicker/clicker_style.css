@@ -1,27 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: consolas;
 }
 
 body {
-    background-color: #B5A39F;
+    background-color: #9fafb5;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
-
-main {
-    background-color: #93989E;
-    border-radius: 50px;
-    border: solid, 10px, white;
-    width: 30vw;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 #luku-div {
@@ -36,15 +24,13 @@ main {
 
 #luku {
     color: white;
-    font-size: 90px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 190px;
 }
 
 #nappi {
-    font-family:'Arial', cursive;
-    padding: 10px;
+    padding: 30px;
     font-size: 70px;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 #upgrade-div {
