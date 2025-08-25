@@ -15,7 +15,7 @@ function laske_sekunti() {
 }
 
 function upgrade1() {
-    if (valuutta - upgrade1Hinta >= 0) {
+    if (valuutta >= upgrade1Hinta) {
         klikkaus ++;
         valuutta = valuutta - upgrade1Hinta;
         upgrade1Hinta = Math.round(upgrade1Hinta * 1.5);
@@ -25,7 +25,7 @@ function upgrade1() {
 }
 
 function upgrade2() {
-    if (valuutta - upgrade2Hinta >= 0) {
+    if (valuutta >= upgrade2Hinta) {
         sekunnissa ++;
         valuutta = valuutta - upgrade2Hinta;
         upgrade2Hinta = Math.round(upgrade2Hinta * 1.5);
