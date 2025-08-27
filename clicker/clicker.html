@@ -6,18 +6,19 @@
     <body>
         <div id="luku-div">
             <h1 id="luku">0</h1>
+            <p id="perSecond">Klikkauksia<br>sekunnissa: 0</p>
         </div>
         <div id="btn-div">
             <button id="nappi" onclick="laske_klikkaus()">KLIKKAA</button>
         </div>
         <div id="upgrade-div">
-            <div id="upgrade1">
-                <button id="upgrade-btn1" onclick="upgrade1()">+1 klikkaus</button>
-                <h2 id="hinta1">Hinta: 20</h2>
+            <div>
+                <button onclick="upgrade1()">+1 klikkaus</button>
+                <p id="hinta1">Hinta: 20</p>
             </div>
-            <div id="upgrade2">
-                <button id="upgrade-btn2" onclick="upgrade2()">+1 sekunnissa</button>
-                <h2 id="hinta2">Hinta: 200</h2>
+            <div>
+                <button onclick="upgrade2()">+1 sekunnissa</button>
+                <p id="hinta2">Hinta: 200</p>
             </div>
         </div>
     </body>
