@@ -10,6 +10,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 #luku-div {
@@ -59,4 +63,43 @@ body {
 #upgrade-div p {
     color: white;
     font-size: 30px;
+}
+
+#style-div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 10px;
+    position: absolute;
+}
+
+#style-div img {
+    height: 100px;
+    border-radius: 20px;
+    border: solid, white, 5px;
+}
+
+#style1 {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#style-div img:hover {
+    border: dotted, black, 5px;
+}
+
+#owned-div {
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#owned-div img {
+    height: 50px;
 }

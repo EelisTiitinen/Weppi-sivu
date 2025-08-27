@@ -7,6 +7,7 @@ var sekunnissa = 0;
 const luku = document.getElementById("luku");
 const hinta1 = document.getElementById("hinta1");
 const hinta2 = document.getElementById("hinta2");
+const owned = document.getElementById("owned-div");
 
 function laske_klikkaus() {
     valuutta = valuutta + klikkaus;
@@ -32,6 +33,16 @@ function upgrade2() {
         sekunnissa ++;
         valuutta = valuutta - upgrade2Hinta;
         upgrade2Hinta = Math.round(upgrade2Hinta * 1.5);
+        update_page();
+    }
+}
+
+function style1(source, style1Hinta) {
+    if (valuutta >= style1Hinta) {
+        valuutta = valuutta - style1Hinta;
+        document.body.style.backgroundImage = `url(${source})`;
+        document.getElementById("style1").remove();
+        owned.innerHTML = `<img src=\"${source}\">`;
         update_page();
     }
 }
